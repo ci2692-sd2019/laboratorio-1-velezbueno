@@ -19,8 +19,7 @@ También se realizó un archivo “test_sort.py” en el cual se hizo uso de los
 
 ### Descripción:
 
->InsertionSort es un algoritmo de ordenamiento que dado un arreglo, inserta los elementos del arreglo en la posición correcta, ordenando el arreglo  dentro del mismo de forma ascendente.
-
+>InsertionSort es un algoritmo de ordenamiento que dado un arreglo, inserta los elementos del arreglo en la posición correcta, ordenando el arreglo  dentro del mismo de forma ascendente.  
 El algoritmo InsertionSort presenta un tiempo para el peor caso de Θ(n∧2) y un tiempo promedio de Θ(n∧2)
 
 ### Implementación:
@@ -39,9 +38,8 @@ El procedimiento InsertionSort(A, p, r), compara los elementos del arreglo desde
 
 ### Descripción:
 
->Mergersort es un algoritmo de ordenamiento que divide en dos partes iguales los elementos de un arreglo, ordenando estas partes por medio de llamadas recursivas y combinando la solución de cada parte en orden ascendente.
-
->El algoritmo Mergersort presenta la siguiente recurrencia: t(n) = t( n/2 ) + t( n/2 ) + Θ(n). En donde el tiempo para el peor caso es Θ(n log n) y un tiempo promedio de Θ(n log n).
+>Mergersort es un algoritmo de ordenamiento que divide en dos partes iguales los elementos de un arreglo, ordenando estas partes por medio de llamadas recursivas y combinando la solución de cada parte en orden ascendente.  
+El algoritmo Mergersort presenta la siguiente recurrencia: t(n) = t( n/2 ) + t( n/2 ) + Θ(n). En donde el tiempo para el peor caso es Θ(n log n) y un tiempo promedio de Θ(n log n).
 
 ### Implementación:
 
@@ -59,15 +57,14 @@ El procedimiento MergerSort(A, p, r),  se llama a ella misma dos veces y luego l
 
 ### Descripción:
 
->HeapSort es un algoritmo de ordenamiento basado en comparaciones, el cual utiliza la estructura de datos heap binario, implementando una cola de prioridades. HeapSort ordena los elementos del arreglo dentro del mismo de forma ascendente.
-
->El algoritmo HeapSort presenta un tiempo para el peor caso de Θ(n log n) y un tiempo promedio de Θ(n log n).
+>HeapSort es un algoritmo de ordenamiento basado en comparaciones, el cual utiliza la estructura de datos heap binario, implementando una cola de prioridades. HeapSort ordena los elementos del arreglo dentro del mismo de forma ascendente.  
+El algoritmo HeapSort presenta un tiempo para el peor caso de Θ(n log n) y un tiempo promedio de Θ(n log n).
 
 ### Implementación:
 
 Estructura de datos: En cuanto a los parámetros que recibe la función, tenemos:
 
-  * A: Arreglo de tipo flotante o  entero de tamaño n, que contiene los elementos a ser ordenados.
+  - A: Arreglo de tipo flotante o  entero de tamaño n, que contiene los elementos a ser ordenados.
 
 En cuanto a las estructuras de datos utilizadas en el algoritmo HeapSort, tenemos:
 
@@ -81,9 +78,8 @@ El procedimiento MergerSort(A), llama al procedimiento buildmaxheap para constru
 
 ### Descripción:
 
->QuickSort es un algoritmo de ordenamiento recursivo que toma el último elemento x del arreglo y se divide de tal forma que todos los elementos menores de x están antes que el y los mayores que x, están después de el. Luego a través de llamadas recursivas ordena el arreglo de forma ascendente.
-
->El algoritmo QuickSort presenta la siguiente recurrencia t(n) = t(q) + t(n − q) + n. En donde el tiempo para el peor caso es de Θ(n∧2) y para el caso promedio es de Θ(n log n).
+>QuickSort es un algoritmo de ordenamiento recursivo que toma el último elemento x del arreglo y se divide de tal forma que todos los elementos menores de x están antes que el y los mayores que x, están después de el. Luego a través de llamadas recursivas ordena el arreglo de forma ascendente.  
+El algoritmo QuickSort presenta la siguiente recurrencia t(n) = t(q) + t(n − q) + n. En donde el tiempo para el peor caso es de Θ(n∧2) y para el caso promedio es de Θ(n log n).
 
 ### Implementación:
 
@@ -100,9 +96,8 @@ El procedimiento QuickSort(A, p, r), llama al procedimiento Partition, que parti
 
 ### Descripción:
 
->RandomizedQuicksort es un algoritmo de ordenamiento recursivo que toma un elemento al azar x del arreglo y se divide de tal forma que todos los elementos menores de x están antes que el y los mayores que x, están después de el. Luego a través de llamadas recursivas ordena el arreglo de forma ascendente.
-
->El algoritmo RandomizedQuicksort presenta la siguiente recurrencia t(n) = t(q) + t(n − q) + n. En donde el tiempo para el peor caso es de Θ(n∧2) y para el caso promedio es de Θ(n log n).
+>RandomizedQuicksort es un algoritmo de ordenamiento recursivo que toma un elemento al azar x del arreglo y se divide de tal forma que todos los elementos menores de x están antes que el y los mayores que x, están después de el. Luego a través de llamadas recursivas ordena el arreglo de forma ascendente.  
+El algoritmo RandomizedQuicksort presenta la siguiente recurrencia t(n) = t(q) + t(n − q) + n. En donde el tiempo para el peor caso es de Θ(n∧2) y para el caso promedio es de Θ(n log n).
 
 ### Implementación:
 
@@ -119,9 +114,8 @@ El procedimiento RandomizedQuicksort(A, p, r), llama al procedimiento Randomized
 
 ### Descripción:
 
->CountingSort es un algoritmo de ordenamiento, que lo primero que se hace es contar cuantos elementos son menores a k, para cada elemento x de un arreglo. Una vez que la información es calculada, cada elemento x es colocado directamente en su posición final en el arreglo de salida.
-
->El algoritmo CountingSort presenta un tiempo para el peor caso de Θ(k + n) y un tiempo promedio de Θ(k + n).
+>CountingSort es un algoritmo de ordenamiento, que lo primero que se hace es contar cuantos elementos son menores a k, para cada elemento x de un arreglo. Una vez que la información es calculada, cada elemento x es colocado directamente en su posición final en el arreglo de salida.  
+El algoritmo CountingSort presenta un tiempo para el peor caso de Θ(k + n) y un tiempo promedio de Θ(k + n).
 
 ### Implementación:
 
@@ -139,9 +133,8 @@ La función CountingSort(A,B,k), primero cuenta cuantas veces aparece un element
 
 ### Descripción:
 
->RadixSort es un algoritmo de ordenamiento, que utiliza algún algoritmo estable como CountingSort para ordenar cifras dígito a dígito. Primero clasifica la cifra por el dígito menos significativo, luego clasifica la cifra de nuevo por el segundo dígito menos significativo, repitiendo el proceso hasta concatenar por el dígito más significativo.
-
->El algoritmo RadixSort presenta un tiempo para el peor caso de Θ(d(n + k)) y un tiempo promedio de Θ(d(n + k)).
+>RadixSort es un algoritmo de ordenamiento, que utiliza algún algoritmo estable como CountingSort para ordenar cifras dígito a dígito. Primero clasifica la cifra por el dígito menos significativo, luego clasifica la cifra de nuevo por el segundo dígito menos significativo, repitiendo el proceso hasta concatenar por el dígito más significativo.  
+El algoritmo RadixSort presenta un tiempo para el peor caso de Θ(d(n + k)) y un tiempo promedio de Θ(d(n + k)).
 
 ### Implementación:
 
@@ -213,15 +206,16 @@ que pueden leer el [Sections](https://numpydoc.readthedocs.io/en/latest/format.h
 
 3. Con los resultados de la actividad anterior, deberán completar el siguiente cuadro, colocando el tiempo promedio y la desviación estándar para `10 corridas` de cada algoritmo para cada `n`
 
-| Algoritmo             |  1.000 |  5.000 | 10.000 | 20.000 | 40.000 | 80.000 | 160.000 |
-|----------------------	|------- |--------|--------|--------|--------|--------|---------|
-| Insertion            	|        |        |        |        |        |        |         |
-| Merge Sort           	|       |      	|       |       |       |       |       |
-| Heap Sort            	|       |      	|       |       |       |       |       |
-| Quicksort            	|       |      	|       |       |       |       |       |
-| Randomized Quicksort 	|       |      	|       |       |       |       |       |
-| Counting sort        	|       |      	|       |       |       |       |       |
-| Radix sort           	|       |      	|       |       |       |       |       |
+| Algoritmo             |  1.000  |  5.000  | 10.000  | 20.000  | 40.000  | 80.000  | 160.000 |
+|                       |Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|
+|----------------------	|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| Insertion            	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Merge Sort           	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Heap Sort            	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Quicksort            	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Randomized Quicksort 	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Counting sort        	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Radix sort           	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
 
 
 
