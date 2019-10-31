@@ -160,64 +160,11 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 |CountingSort|84.15  5.17|91.44    5.67|100.06     3.44|118.55     11.87|140.73       7.37|211.82         20.01|319.92         17.63|
 |RadixSort   |12.04  3.35|60.82    3.05|112.33     3.63|247.4      29.91|496         48.06|1114.31          184|2125.91        98.67|
 
+## Gráficas
+
+![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
 
 ### Actividades
-
-1. Implemente los siguientes algoritmos (puede usar las implementaciones realizadas en los laboratorios previos): 
-
-	- 1.1. Inserción 
-	- 1.2. MergerSort
-	- 1.3. HeapSort
-	- 1.4. Quicksort
-	- 1.5. Randomized Quicksort 
-	- 1.6. Counting Sort
-	- 1.7. Radix Sort
-
-Sus implementaciones deberán realizarse en un archivo denominado: `sorts.py`. En el repositorio se les incluye una versión inicial de este archivo con las firmas (Nombre de la función y los parámetros) de las funciones a  implementar. 
-
-2. Implemente un programa de prueba `test_sorts.py` que le permita evaluar los algoritmos implementados en la actividad anterior. Esta aplicación se ejecutará usando el siguiente comando:
-> python3 test_sorts.py [num pruebas] [num elems]
-	
-donde:
-- [num pruebas] : Es el número de veces que se ejecuta cada algoritmo de ordenamiento sobre diferentes arreglos.
-- [num elems] :  Es el número de elementos que contiene el arreglo a ordenar. Pueden asumir que los elementos de los arreglos son números enteros (no hace falta que lo verifiquen).
-
-Por ejemplo, la llamada `python3 test_sorts.py 5 1000` ejecutará 5 veces todos los algoritmos de ordenamiento sobre arreglos de tamaño 1000. 
-
-Este programa prueba debe mostrar por la salida estándar el tiempo promedio de ejecución en milisegundos y la desviación estandar de cada algoritmo.  Para ello: 
-- El contador de tiempo debe empezar al arrancar el algoritmo de
-ordenamiento y detenerse al terminar de ordenarse el arreglo. 
-- Los números deben mostrarse con 2 decimales.
-
-El formato de la salida es el siguiente:
-
-```
-<Algoritmo 1> <tiempo promedio 1> <desviación estandar 1>
-<Algoritmo 2> <tiempo promedio 2> <desviación estandar 2>
-...
-<Algoritmo N> <tiempo promedio N> <desviación estandar N>
-```
-
-Por ejemplo:
-```
-Insercion 2575.43 28.12
-Mergesort 1569.21 24.14
-Heapsort 1567.98 24.76
-Quicksort 1463.11 25.61
-RadomizedQuicksort 1871.34 23.87
-Countingsort 2078.33 24.76
-Radixsort 1443.33 22.89
-```
- 
-*NOTAS IMPORTANTES*: 
-
-- Todo su código deberá estar documentado. 
-- Su código deberá cumplir con la [guía de estilo de PEP8](https://www.python.org/dev/peps/pep-0008/), y estar documentado siguiendo las [convenciones de numpy](https://numpydoc.readthedocs.io/en/latest/format.html). Especialmente la documentación de cada función (resumen, parámetros y retorno) 
-que pueden leer el [Sections](https://numpydoc.readthedocs.io/en/latest/format.html#sections) del documento.
-- Deben verificar que las llamadas a su programa de prueba se hagan de forma adecuada.
-
-
-3. Con los resultados de la actividad anterior, deberán completar el siguiente cuadro, colocando el tiempo promedio y la desviación estándar para `10 corridas` de cada algoritmo para cada `n`
 
 4. Debe realizar un breve informe que debe contener:
 - Un resumen
