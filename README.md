@@ -207,8 +207,9 @@ que pueden leer el [Sections](https://numpydoc.readthedocs.io/en/latest/format.h
 3. Con los resultados de la actividad anterior, deberán completar el siguiente cuadro, colocando el tiempo promedio y la desviación estándar para `10 corridas` de cada algoritmo para cada `n`
 
 | Algoritmo             |  1.000  |  5.000  | 10.000  | 20.000  | 40.000  | 80.000  | 160.000 |
+|-----------------------|---------|---------|---------|---------|---------|---------|---------|
 |                       |Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|Prom|Desv|
-|----------------------	|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|-----------------------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
 | Insertion            	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
 | Merge Sort           	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
 | Heap Sort            	|    |    |    |    |    |    |    |    |    |    |    |    |    |    |
