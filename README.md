@@ -163,6 +163,14 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 ## Gráficas
 
 ![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
+![MergeSort](images/Merge.png?raw=true "MergeSort")
+![HeapSort](images/Heap.png?raw=true "HeapSort")
+![QuickSort](images/Quick.png?raw=true "QuickSort")
+![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
+![CountingSort](images/Counting.png?raw=true "CountingSort")
+![RadixSort](images/Radix.png?raw=true "RadixSort")
+
+![Comparacion](images/Comparacion.png?raw=true "Comparacion")
 
 ### Actividades
 
