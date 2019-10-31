@@ -11,6 +11,7 @@
 >Se realizó un archivo ‘sorts.py’ siguiendo los pseudo códigos de las laminas vistas en clase de CI2612, donde se implementaron algoritmos de ordenamiento, los cuales son InsertionSort, MergeSort, Quicksort, RandomizedQuicksort, CountinSort y RadixSort.  
 También se realizó un archivo “test_sort.py” en el cual se hizo uso de los algoritmos en “sort.py” para calcular el promedio y la desviación estándar de los tiempos de ejecución de los distintos algoritmos de ordenamiento, con el fin de evaluar su comportamiento con arreglos de varios tamaños y así verificar si se cumplen las cotas teóricas que se vieron en clase. 
 
+
 ##Descripción de los algoritmos
 
 
