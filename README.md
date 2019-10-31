@@ -161,30 +161,31 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 |RadixSort   |12.04  3.35|60.82    3.05|112.33     3.63|247.4      29.91|496         48.06|1114.31          184|2125.91        98.67|
 
 ## Gráficas
-
-![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
-![MergeSort](images/Merge.png?raw=true "MergeSort")
-![HeapSort](images/Heap.png?raw=true "HeapSort")
-![QuickSort](images/Quick.png?raw=true "QuickSort")
-![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
-![CountingSort](images/Counting.png?raw=true "CountingSort")
-![RadixSort](images/Radix.png?raw=true "RadixSort")
-
-![Comparacion](images/Comparacion.png?raw=true "Comparacion")
-
+<p align="center">
+	![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
+	![MergeSort](images/Merge.png?raw=true "MergeSort")
+	![HeapSort](images/Heap.png?raw=true "HeapSort")
+	![QuickSort](images/Quick.png?raw=true "QuickSort")
+	![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
+	![CountingSort](images/Counting.png?raw=true "CountingSort")
+	![RadixSort](images/Radix.png?raw=true "RadixSort")
+	![Comparacion](images/Comparacion.png?raw=true "Comparacion")
+</p>
 ## Análisis de los resultados
 
-Según los resultados obtenidos en la tabla, se puede observar que ciertos algoritmos son más eficientes en cuanto a velocidad de ejecución que otros. Como se estudio en la teoría, el algoritmo InsertionSort es el que presenta el tiempo de ejecución más alto para cualquier valor de los n con los cuales se probó, teniendo un amplio margen de separación en cuanto al tiempo en comparación con el segundo algoritmo más lento para los para los valores de n, además tenemos que RandomizedQuicksort es el algoritmo más rápido para el n más pequeño con el cual se probo, pero a medida que la cantidad de elementos va aumentando, QuickSort es más eficiente que él.  
-En cuanto a los algoritmos estables, se observa que en efecto CountingSort es uno de ellos, si bien es uno de los más lentos cuando se ordenan pocos elementos, al momento que estos van aumentando  el tiempo de ejecución de Countingsort aumenta muy poco, siendo el algoritmo más eficiente para un número muy elevado de elementos.  
-En cuanto al análisis del comportamiento de los algoritmos en las gráficas, se puede observar que como se estudio en la teoría, los algoritmos se ajustan a la cota superior estudiada. En algunos casos la línea de tendencia de los algoritmos supera la línea de cota que le corresponde, pero es solo por un pequeño margen. En cuanto a la gráfica de comparación del tiempo promedio de todos los algoritmos exceptuando InsertionSort, se observa que HeapSort es el que presenta un mayor crecimiento en cuanto a los demás y que CountingSort es el algoritmo con menor crecimiento, en cuanto a MergeSort, Quicksort, RandomizedQuicksort  y RadixSort, estos presentan líneas de tendencia muy parecidas en donde en algunos puntos llegan a interceptarse.
+Según los resultados obtenidos en la tabla, se puede observar que ciertos algoritmos son más eficientes en cuanto a velocidad de ejecución que otros. Como se estudió en la teoría, el algoritmo InsertionSort es el que presenta el tiempo de ejecución más alto para cualquier valor de los n con los cuales se probó, teniendo un amplio margen de separación en cuanto al tiempo en comparación con el segundo algoritmo más lento, para los para los valores de n, además tenemos que RandomizedQuicksort es el algoritmo más rápido para el n más pequeño con el cual se probó, pero a medida que la cantidad de elementos va aumentando, QuickSort es más eficiente que él.
+
+En cuanto a los algoritmos estables, se observa que en efecto CountingSort es uno de ellos, si bien es uno de los más lentos cuando se ordenan pocos elementos, al momento que estos van aumentando  el tiempo de ejecución de Countingsort aumenta muy poco, siendo el algoritmo más eficiente para un número muy elevado de elementos.
+
+En cuanto al análisis del comportamiento de los algoritmos en las gráficas, se puede observar que, como se estudió en la teoría, los algoritmos se ajustan a la cota superior estudiada. En algunos casos la línea de tendencia de los algoritmos supera la línea de cota que le corresponde, pero es solo por un pequeño margen. En cuanto a la gráfica de comparación del tiempo promedio de todos los algoritmos exceptuando InsertionSort, se observa que HeapSort es el que presenta un mayor crecimiento en cuanto a los demás y que CountingSort es el algoritmo con menor crecimiento, en cuanto a MergeSort, Quicksort, RandomizedQuicksort  y RadixSort, estos presentan líneas de tendencia muy parecidas en donde en algunos puntos llegan a interceptarse.
     
 ## Conclusiones
 
-Luego del estudio de los algoritmos de ordenamiento InsertionSort, MergeSort, HeapSort, QuickSort, RandomizedQuicksort, CountingSort y RadixSort, podemos concluir que ciertos algoritmos son más eficientes en cuanto al tiempo de ejecución, según los elementos a ordenar. El algoritmo InsertionSort es el menos recomendado cualquier sea el número de elementos a ordenar, ya que su tiempo de ejecución es muy elevado en comparación con los demás algoritmos.  
-Si el objetivo es ordenar pocos elementos los algoritmos QuickSort y RandomizedQuicksort son los mas idóneos para ello, aunque MergeSort, HeapSort y RadixSort también funcionan de manera eficiente. En cuanto a un número de elementos muy grandes, si bien QuickSort, RandomizedQuicksort y RadixSort presentan tiempos de ejecución bajos, el recomendado para ello es CountingSort ya que a medida que la cantidad de elementos va aumentando, el tiempo de ejecución de este aumenta muy poco. Cabe destacar que los algoritmos CountingSort y RadixSort son algoritmos que sólo ordenan números enteros mayores e iguales a cero.  
+Luego del estudio de los algoritmos de ordenamiento InsertionSort, MergeSort, HeapSort, QuickSort, RandomizedQuicksort, CountingSort y RadixSort, podemos concluir que ciertos algoritmos son más eficientes en cuanto al tiempo de ejecución, según los elementos a ordenar. El algoritmo InsertionSort es el menos recomendado cualquier sea el número de elementos a ordenar, ya que su tiempo de ejecución es muy elevado en comparación con los demás algoritmos.
+
+Si el objetivo es ordenar pocos elementos los algoritmos QuickSort y RandomizedQuicksort son los mas idóneos para ello, aunque MergeSort, HeapSort y RadixSort también funcionan de manera eficiente. En cuanto a un número de elementos muy grandes, si bien QuickSort, RandomizedQuicksort y RadixSort presentan tiempos de ejecución bajos, el recomendado para ello es CountingSort ya que a medida que la cantidad de elementos va aumentando, el tiempo de ejecución de este aumenta muy poco. Cabe destacar que los algoritmos CountingSort y RadixSort son algoritmos que solo ordenan números enteros mayores e iguales a cero.
+
 En cuanto al comportamiento de los algoritmos en relación con la cantidad de elementos a ordenar y el tiempo de ejecución, se observo en las gráficas que estos se ajustan a sus cotas superiores, tal como se estudió en la teoría.
 
 ## Bibliografía
- * T. Cormen, C. Leirserson, R. Rivest, and C. Stein.
-      Introduction to Algorithms.
-      McGraw Hill, 3ra edition, 2009.
+ * T. Cormen, C. Leirserson, R. Rivest, and C. Stein. Introduction to Algorithms. McGraw Hill, 3ra edition, 2009.
