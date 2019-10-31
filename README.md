@@ -162,10 +162,8 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 
 ## Gráficas
 
-![InsertionSort][1] ![MergeSort][2]
-
-[1]: images/Insertion.png?raw=true =200x "InsertionSort"
-[2]: images/Merge.png?raw=true "MergeSort"
+![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
+![MergeSort](images/Merge.png?raw=true "MergeSort")
 ![HeapSort](images/Heap.png?raw=true "HeapSort")
 ![QuickSort](images/Quick.png?raw=true "QuickSort")
 ![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
@@ -174,20 +172,19 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 
 ![Comparacion](images/Comparacion.png?raw=true "Comparacion")
 
-### Actividades
+## Análisis de los resultados
 
-4. Debe realizar un breve informe que debe contener:
-- Un resumen
-- Breve descripción de su implementación (detalles relevantes de las estructuras de datos y la implementación de los algoritmos)
-- Los resultados de la tabla de la actividad 3, 
-- **Una gráfica para cada algoritmo** que presente un punto para el tiempo promedio para cada tamaño de entrada, estos puntos estarán unidos por una línea de tendencia (línea que une los puntos); sobre esta misma gráfica dibujarán una línea que muestre el comportamiento teórico del algorimo; deberán indicar en la leyenda cuál es la constante usada para ajustar esta línea (Cota superior).
-- **Una gráfica con los tiempos promedios de todos los algoritmos** (menos el de ordenamiento por inserción). Esta gráfica contendrá una línea de tendencia para cada algoritmo.  
-- Un breve análisis de los resultados de la tabla y las gráficas.
-Este informe deberá incluirse como un archivo .md ([Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) en su repositorio.  
-- Conclusiones 
-- Bibliografía
+Según los resultados obtenidos en la tabla, se puede observar que ciertos algoritmos son más eficientes en cuanto a velocidad de ejecución que otros. Como se estudio en la teoría, el algoritmo InsertionSort es el que presenta el tiempo de ejecución más alto para cualquier valor de los n con los cuales se probó, teniendo un amplio margen de separación en cuanto al tiempo en comparación con el segundo algoritmo más lento para los para los valores de n, además tenemos que RandomizedQuicksort es el algoritmo más rápido para el n más pequeño con el cual se probo, pero a medida que la cantidad de elementos va aumentando, QuickSort es más eficiente que él.  
+En cuanto a los algoritmos estables, se observa que en efecto CountingSort es uno de ellos, si bien es uno de los más lentos cuando se ordenan pocos elementos, al momento que estos van aumentando  el tiempo de ejecución de Countingsort aumenta muy poco, siendo el algoritmo más eficiente para un número muy elevado de elementos.  
+En cuanto al análisis del comportamiento de los algoritmos en las gráficas, se puede observar que como se estudio en la teoría, los algoritmos se ajustan a la cota superior estudiada. En algunos casos la línea de tendencia de los algoritmos supera la línea de cota que le corresponde, pero es solo por un pequeño margen. En cuanto a la gráfica de comparación del tiempo promedio de todos los algoritmos exceptuando InsertionSort, se observa que HeapSort es el que presenta un mayor crecimiento en cuanto a los demás y que CountingSort es el algoritmo con menor crecimiento, en cuanto a MergeSort, Quicksort, RandomizedQuicksort  y RadixSort, estos presentan líneas de tendencia muy parecidas en donde en algunos puntos llegan a interceptarse.
+    
+## Conclusiones
 
-### Entrega
-- En el repositorio git del equipo: los archivos .py documentados y el informe en el archivo INFORME.md
-- La fecha de entrega es el Jueves 31 de Octubre a las 12:00 del medio día. No se aceptarán cambios a su repositorio Git posteriores a esa fecha/hora.
+Luego del estudio de los algoritmos de ordenamiento InsertionSort, MergeSort, HeapSort, QuickSort, RandomizedQuicksort, CountingSort y RadixSort, podemos concluir que ciertos algoritmos son más eficientes en cuanto al tiempo de ejecución, según los elementos a ordenar. El algoritmo InsertionSort es el menos recomendado cualquier sea el número de elementos a ordenar, ya que su tiempo de ejecución es muy elevado en comparación con los demás algoritmos.  
+Si el objetivo es ordenar pocos elementos los algoritmos QuickSort y RandomizedQuicksort son los mas idóneos para ello, aunque MergeSort, HeapSort y RadixSort también funcionan de manera eficiente. En cuanto a un número de elementos muy grandes, si bien QuickSort, RandomizedQuicksort y RadixSort presentan tiempos de ejecución bajos, el recomendado para ello es CountingSort ya que a medida que la cantidad de elementos va aumentando, el tiempo de ejecución de este aumenta muy poco. Cabe destacar que los algoritmos CountingSort y RadixSort son algoritmos que sólo ordenan números enteros mayores e iguales a cero.  
+En cuanto al comportamiento de los algoritmos en relación con la cantidad de elementos a ordenar y el tiempo de ejecución, se observo en las gráficas que estos se ajustan a sus cotas superiores, tal como se estudió en la teoría.
 
+## Bibliografía
+ * T. Cormen, C. Leirserson, R. Rivest, and C. Stein.
+      Introduction to Algorithms.
+      McGraw Hill, 3ra edition, 2009.
