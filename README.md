@@ -161,16 +161,16 @@ La función RadixSort(A, d), ordena las cifras en el arreglo A según el dígito
 |RadixSort   |12.04  3.35|60.82    3.05|112.33     3.63|247.4      29.91|496         48.06|1114.31          184|2125.91        98.67|
 
 ## Gráficas
-<p align="center">
-	![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
-	![MergeSort](images/Merge.png?raw=true "MergeSort")
-	![HeapSort](images/Heap.png?raw=true "HeapSort")
-	![QuickSort](images/Quick.png?raw=true "QuickSort")
-	![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
-	![CountingSort](images/Counting.png?raw=true "CountingSort")
-	![RadixSort](images/Radix.png?raw=true "RadixSort")
-	![Comparacion](images/Comparacion.png?raw=true "Comparacion")
-</p>
+
+![InsertionSort](images/Insertion.png?raw=true "InsertionSort")
+![MergeSort](images/Merge.png?raw=true "MergeSort")
+![HeapSort](images/Heap.png?raw=true "HeapSort")
+![QuickSort](images/Quick.png?raw=true "QuickSort")
+![RQuickSort](images/RQuick.png?raw=true "RQuickSort")
+![CountingSort](images/Counting.png?raw=true "CountingSort")
+![RadixSort](images/Radix.png?raw=true "RadixSort")
+![Comparacion](images/Comparacion.png?raw=true "Comparacion")
+
 ## Análisis de los resultados
 
 Según los resultados obtenidos en la tabla, se puede observar que ciertos algoritmos son más eficientes en cuanto a velocidad de ejecución que otros. Como se estudió en la teoría, el algoritmo InsertionSort es el que presenta el tiempo de ejecución más alto para cualquier valor de los n con los cuales se probó, teniendo un amplio margen de separación en cuanto al tiempo en comparación con el segundo algoritmo más lento, para los para los valores de n, además tenemos que RandomizedQuicksort es el algoritmo más rápido para el n más pequeño con el cual se probó, pero a medida que la cantidad de elementos va aumentando, QuickSort es más eficiente que él.
